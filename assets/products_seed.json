@@ -1,0 +1,10 @@
+[
+{"id":"APL","name":"Apple","unit":"kg","priceCents":15000},
+{"id":"BAN","name":"Banana","unit":"dozen","priceCents":6000},
+{"id":"TOM","name":"Tomato","unit":"kg","priceCents":4000},
+{"id":"ONI","name":"Onion","unit":"kg","priceCents":3500},
+{"id":"POT","name":"Potato","unit":"kg","priceCents":3000},
+{"id":"CAR","name":"Carrot","unit":"kg","priceCents":5000},
+{"id":"CUC","name":"Cucumber","unit":"kg","priceCents":4500},
+{"id":"MIL","name":"Milk","unit":"litre","priceCents":5500}
+]
