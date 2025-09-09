@@ -9,17 +9,17 @@ sealed class Failure implements Exception {
 }
 
 class StockFailure extends Failure {
-  const StockFailure([String message = 'Insufficient stock']) : super(message);
+  const StockFailure([super.message = 'Insufficient stock']);
 }
 
 class CutoffFailure extends Failure {
-  const CutoffFailure([String message = 'Cutoff rule violated']) : super(message);
+  const CutoffFailure([super.message = 'Cutoff rule violated']);
 }
 
 class CacheFailure extends Failure {
-  const CacheFailure([String message = 'Cache error']) : super(message);
+  const CacheFailure([super.message = 'Cache error']);
 }
 
 class NetworkFailure extends Failure {
-  const NetworkFailure([String message = 'Network error']) : super(message);
+  const NetworkFailure([super.message = 'Network error']);
 }

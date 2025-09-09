@@ -64,7 +64,7 @@ class OrderFormController extends GetxController {
         f.message,
         snackPosition: SnackPosition.BOTTOM,
       );
-    } catch (e, st) {
+    } catch (e) {
       // Unexpected error
       info.value = 'Unexpected error, please try again';
       // Log for debugging

@@ -9,21 +9,19 @@ import 'presentation/theme/app_theme.dart';
 
 
 void main() async {
-WidgetsFlutterBinding.ensureInitialized();
-await Hive.initFlutter();
-Hive.registerAdapter(ProductModelAdapter());
-Hive.registerAdapter(StockSnapshotModelAdapter());
-Hive.registerAdapter(OrderModelAdapter());
-Hive.registerAdapter(QueueItemModelAdapter());
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
 
+  Hive.registerAdapter(ProductModelAdapter());
+  Hive.registerAdapter(StockSnapshotModelAdapter());
+  Hive.registerAdapter(OrderModelAdapter());
+  Hive.registerAdapter(QueueItemModelAdapter());
 
+  Get.put(NetworkInfo());
+  final db = Get.put(LocalDb());
+  await db.init();
 
-Get.put(NetworkInfo());
-final db = Get.put(LocalDb());
-await db.init();
-
-
-runApp(const EAApp());
+  runApp(const EAApp());
 }
 
 
